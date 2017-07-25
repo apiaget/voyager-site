@@ -542,11 +542,14 @@ Thumbnails takes an array of objects. Each object is a new thumbnail that is cre
 
 ```js
 {
-    "format" : "Y-m-d"
+    "datepicker": {
+        "format": "YYYY-MM-DD",
+        "locale": "fr"
+    }
 }
 ```
 
-The date input field is where you can input a date. In the JSON above you can specify the `format` value of the output of the date. It allows you to display a formatted `date` in browse and read views, using Carbon's `formatLocalized()` method
+The date input field is where you can input a date. In the JSON above you can specify the `format` value of the output of the date which is used by the datepickers for example. A few other options are available and are documented in the [datetimepicker](http://eonasdan.github.io/bootstrap-datetimepicker/) library.
 
 ### Description
 
